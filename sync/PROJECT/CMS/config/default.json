@@ -1,0 +1,13 @@
+{ "appName": "Course Management System",
+  "port": 3400,
+  "secret": "6df17169fe62c6c41598423a40a085b3402039556abe0b7b6e733580b7e69410fcc3146b2945811b0e3189a57038ec3559975f45ca067dfc43958b888f2c8221",
+  "database": {
+    "host": "localhost",
+    "port": 27017,
+    "name": "courseDB"
+  },
+  "rateLimit": {
+    "windowMs": 60000,
+    "maxRequests": 100
+  }
+}

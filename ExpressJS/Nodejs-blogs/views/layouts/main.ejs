@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title || "Default Title" %></title>  <!-- If title is missing, use "Default Title" -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <main>
+         <!-- This is where 'index.ejs' will be injected -->
+        <div class="container">
+            <%- include("../partials/header.ejs") %>
+            <main class="main"><%- body %></main> 
+            <%- include("../partials/footer.ejs") %>
+        </div>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+</html>

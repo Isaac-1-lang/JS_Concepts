@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML, innerText, textContent Demo</title>
+    <style>
+        .hidden { display: none; }
+        .paragraph {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML content -->
+    <button onclick="demonstrateProperties()">Click to Demonstrate</button>
+    
+    <!-- Paragraph elements to test setting attributes -->
+    <p>HTML</p>
+    <p>HTM</p>
+    <p>HT</p>
+    <p>H</p>
+    <p>HM</p>
+
+    <!-- Example div for demonstrating innerHTML, innerText, textContent -->
+    <div id="example">
+        <p>Hello <span class="hidden">secret</span> world!</p>
+    </div>
+    
+    <div id="output"></div>
+
+    <script>
+        function set11() {
+            // Using getElementsByTagName to select all <p> elements
+            const paras = document.getElementsByTagName('p');
+            for(let i = 0; i < paras.length; i++) {
+                paras[i].setAttribute('class', 'paragraph');  // Adds 'paragraph' class to all <p> tags
+            }
+
+            // Using querySelectorAll to select all <p> elements
+            const paras2 = document.querySelectorAll('p');
+            paras2.forEach(function(paragraph) {
+                paragraph.setAttribute('name', 'isaac');  // Adds 'name' attribute to all <p> tags
+            });
+
+            // You can log something to confirm
+            console.log('Attributes have been set.');
+        }
+
+        // Call set11 function to set attributes
+        set11();
+
+        function demonstrateProperties() {
+            const div = document.getElementById('example');
+            const output = document.getElementById('output');
+
+            // Using innerHTML
+            output.innerHTML = '<h3>innerHTML:</h3><p>' + div.innerHTML + '</p>';
+
+            // Using innerText
+            output.innerHTML += '<h3>innerText:</h3><p>' + div.innerText + '</p>';
+
+            // Using textContent
+            output.innerHTML += '<h3>textContent:</h3><p>' + div.textContent + '</p>';
+            
+            // Logging to the console
+            console.log("innerHTML of output:", output.innerHTML);
+            console.log("innerText of output:", output.innerText);
+            console.log("textContent of output:", output.textContent);
+        }
+
+        // Create a new paragraph and add it to the page
+        const inner = document.createElement('p');
+        inner.inne
+        rHTML = '<p style="color:blue">Container</p>';
+        inner.innerText = '<p style="color:blue">Container</p>';
+        inner.textContent = '<p style="color:blue">Container</p>';
+
+        // Append the newly created element
+        const division = document.getElementById('example');
+        division.appendChild(inner);
+
+        // Log the properties of the created element
+        console.log(inner.innerHTML);    // Shows the HTML markup inside the <p> tag
+        console.log(inner.innerText);    // Shows the plain text content inside the <p> tag
+        console.log(inner.textContent);  // Shows the plain text content inside the <p> tag
+           var http = require('http');
+
+// Create the server
+var server = http.createServer(function(req, res) {
+    // Check if the request is for the root URL "/"
+    if (req.url == "/") {
+        res.end("Welcome");
+    } else {
+        res.end("Page not found");
+    }
+});
+
+// Log when the server starts listening
+console.log("It is listening now!!!");
+
+// Make the server listen on port 5000
+server.listen(5000);
+
+            // res , req
+
+            </script>
+</body>
+</html>

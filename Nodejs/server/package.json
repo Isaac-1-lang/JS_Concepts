@@ -1,0 +1,25 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "It is esablished in 2k25",
+  "keywords": [
+    "Isaac"
+  ],
+  "license": "ISC",
+  "author": "Newton",
+  "type": "commonjs",
+  "main": "ex1.js",
+  "scripts": {
+    "start": "node versioning2",
+    "dev": "nodemon versioning2"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "date-fns": "^4.1.0",
+    "express": "^4.21.2",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

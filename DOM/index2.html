@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="v" id="v">jkldfjfjkdljklfjkldjklgjkldfj</p>
+    <h3 class="home time times" id="h3">Class lists</h3>
+    <script>
+        atttr = document.getElementById('v');
+        console.log(`${atttr.hasAttribute('style')}`)
+        console.log(`${atttr.removeAttribute('class')}`)
+        console.log(`${atttr.setAttribute('style','color:blue')}`)
+        const headingThree= document.getElementById('h3')
+        console.log(headingThree.classList);
+        headingThree.classList.add('news');
+        headingThree.classList.remove('time');
+        headingThree.classList.replace('times','toggled');
+
+
+        console.log(headingThree.classList);
+    </script>
+</body>
+</html>
